@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>MOVIE LOVERS</title>
+</head>
+<body>
+
+ <form action="/response" method="GET">
+
+<% if @year == @years.min%>
+<p><h1>Right!</p></h1>
+
+<% else %>
+<p><h1>Bad...</p></h1>
+
+<% end %>
+
+<%= "This film was made in#{@year} and the oldest was made in #{@years.min}"%>
+</form>
+</body>
+</html>

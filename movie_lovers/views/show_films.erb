@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>MOVIE LOVERS</title>
+</head>
+<body>
+  <h1>Result of your search:</h1>
+  <h3>Quitz! Select the oldest one!</h3>
+
+   <% @nine_films.each do |movie|%>
+    <a href="http://localhost:4567/response"><img src="<%=movie.poster%>" width="100px">
+  
+  <% end %>
+
+</body>
+</html>
